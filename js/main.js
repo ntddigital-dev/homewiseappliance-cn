@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductCarousel();
     initSmoothScroll();
     initMobileMenu();
+    updateCopyrightYear();
 });
 
 // ==================== Hero Slider ====================
@@ -337,6 +338,15 @@ function subscribeNewsletter(email) {
 }
 
 // ==================== Utility Functions ====================
+
+// Update copyright year automatically
+function updateCopyrightYear() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+}
 
 // Format currency
 function formatCurrency(amount) {
