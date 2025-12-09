@@ -67,6 +67,15 @@ ul {
     font-size: 14px;
 }
 
+.window-message a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.window-message a:hover {
+    opacity: 0.8;
+}
+
 /* ==================== Header ==================== */
 .header {
     background: var(--white);
@@ -213,11 +222,10 @@ ul {
 
 .nav-menu {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 60px;
 }
 
 .main-nav a {
