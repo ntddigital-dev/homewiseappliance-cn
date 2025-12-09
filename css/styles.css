@@ -177,6 +177,11 @@ ul {
     color: var(--primary-red);
 }
 
+.header-actions .phone {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 /* Main Navigation */
 .main-nav {
     background: var(--white);
@@ -1473,13 +1478,18 @@ ul {
         position: static;
         order: 2;
         gap: 20px;
-        font-size: 14px;
+        font-size: 16px;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .header-actions a {
-        font-size: 13px;
+        font-size: 16px;
+    }
+
+    .header-actions .phone {
+        font-size: 18px;
+        font-weight: 500;
     }
 
     /* Container padding for mobile */
