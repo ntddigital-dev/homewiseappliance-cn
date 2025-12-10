@@ -153,11 +153,36 @@ ul {
     font-size: 18px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo-tagline {
+    display: none;
+}
+
+.logo-image {
+    display: block;
+    position: absolute;
+    left: 20px;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+}
+
 .logo h1 {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 2px;
     color: var(--navy-blue);
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 
 .header-actions {
@@ -314,6 +339,13 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+    }
+
     .nav-menu {
         width: 100%;
         left: -100%;
@@ -1422,15 +1454,12 @@ ul {
 @media (max-width: 768px) {
     /* Window Message */
     .window-message {
-        padding: 10px 15px;
-        font-size: 12px;
-        line-height: 1.4;
+        display: none;
     }
 
     /* Top Bar - Mobile optimization */
     .top-bar {
-        padding: 8px 0;
-        font-size: 11px;
+        display: none;
     }
 
     .top-bar .container {
@@ -1455,6 +1484,7 @@ ul {
     /* Main Header */
     .main-header {
         padding: 15px 0;
+        position: relative;
     }
 
     .header-content {
@@ -1463,14 +1493,47 @@ ul {
         justify-content: center;
     }
 
+    .main-nav {
+        padding: 0;
+        border-top: none;
+    }
+
     /* Logo - Center on mobile */
     .logo {
+        position: static;
+        order: 1;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .logo-tagline {
+        display: block;
+        font-size: 11px;
+        color: var(--navy-blue);
+        text-align: center;
+        margin: 0;
+        order: 2;
+    }
+
+    .logo-tagline a {
+        color: var(--navy-blue);
+        text-decoration: underline;
+    }
+
+    .logo-image {
+        position: static;
+        left: auto;
         order: 1;
     }
 
+    .logo img {
+        height: 32px;
+    }
+
     .logo h1 {
-        font-size: 24px;
-        text-align: center;
+        display: none;
     }
 
     /* Header Actions - Below logo, centered on mobile */
