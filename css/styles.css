@@ -1092,7 +1092,7 @@ ul {
 
 /* ==================== Luxury Appliances ==================== */
 .luxury-appliances {
-    background: url('../images/luxury-bg.jpg') center/cover;
+    background: url('../images/luxury-bg.webp') center/cover;
     height: 573px;
     position: relative;
 }
@@ -1158,7 +1158,7 @@ ul {
 
 /* ==================== Owen Section ==================== */
 .owen-section {
-    background: url('../images/owen-bg.jpg') center/cover;
+    background: url('../images/owen-bg.webp') center/cover;
     height: 599px;
     position: relative;
 }

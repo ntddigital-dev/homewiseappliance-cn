@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(for file in *.jpg)",
+      "Bash(do echo \"Converting $file...\")",
+      "Bash(cwebp:*)"
     ],
     "deny": [],
     "ask": []
