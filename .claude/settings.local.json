@@ -1,11 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(for file in category-*.png featured-*.png luxury-bg.png objects.png offer*.png owen-bg.png section1-bg.png slider-*.png star*.png)",
-      "Bash(do if [ -f \"$file\" ])",
-      "Bash(then sips -s format jpeg \"$file\" --out \"$file%.png.jpg\" -s formatOptions 85)",
-      "Bash(fi)",
-      "Bash(done)"
+      "Bash(sips:*)"
     ],
     "deny": [],
     "ask": []
